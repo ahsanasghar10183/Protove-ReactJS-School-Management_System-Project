@@ -1,0 +1,33 @@
+@import './variables.scss';
+div.toppers_card
+{
+    background-color: $secondary-color;
+    .card-body
+    {
+        p
+        {
+            text-align: center;
+            color:lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            &:nth-child(1)
+                {
+                    span.values{
+                    color:#2477ff;
+                    }
+                }
+            &:nth-child(2)
+            {
+                span.values{
+                color:#fd5f00;
+                }
+            }
+            &:nth-child(3)
+            {
+                span.values{
+                color:#58d777;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import './variables.scss';
+div.main_login_container
+{
+    padding:0px;
+    margin: 0px;
+    background-color: transparent;
+    div.text_side_main{
+        background: rgb(51,56,103);
+        background: linear-gradient(135deg, rgba(51,56,103,1) 0%, rgba(41,45,88,1) 35%, rgba(26,28,62,1) 100%);
+        background-size:cover;
+    padding-bottom: 80px;
+
+    }
+    div.forms_side_div_main{
+    background-color: $primary-color;
+        padding:0px;
+        margin: 0px;
+        padding-bottom: 80px;
+        clear: both;
+    }
+}
+div.teacher_text_side_main{
+    background: rgb(51,56,103);
+    background: linear-gradient(135deg, rgba(51,56,103,1) 0%, rgba(41,45,88,1) 35%, rgba(26,28,62,1) 100%);
+    background-size:cover;
+padding-bottom: 160px;
+
+}
+div.teacher_forms_side_div_main{
+background-color: $primary-color;
+    padding:0px;
+    margin: 0px;
+    padding-bottom: 160px;
+    clear: both;
+}
+div.acc_images
+{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    min-height: 100vh;
+
+
+}

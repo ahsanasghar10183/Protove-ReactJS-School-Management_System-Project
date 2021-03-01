@@ -1,0 +1,466 @@
+@import './variables.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:white;
+  min-height: 100%;
+  
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@mixin text_style {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:lightgray;
+  padding: 10px;
+}
+input{
+  background-color: #3f405b;
+  border-radius: 2px;
+  border:none;
+  color:lightgray;
+}
+nav
+{
+  background: rgb(51,56,103);
+background: linear-gradient(90deg, rgba(51,56,103,1) 0%, rgba(41,45,88,1) 35%, rgba(23,25,59,1) 100%);
+div.Whole_wrapper
+{
+  background-color: darkgoldenrod;
+  border:3px solid red;
+}
+div.navbar-collapse
+{
+  ul
+  {
+    li.nav_search
+    {
+      input
+      {
+        width:30vw;
+        background-color: $secondary-color;
+        color: white;
+        border:none;
+
+      }
+      margin-left:40vw;
+    }
+    li
+    {
+      padding-left:2vw;
+      img
+      {
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+      }
+      a
+      {
+        color:$secondary-color;
+      }
+    }
+
+  }
+}
+
+}
+div.logo_div{
+  width:100%;
+  display:flex;
+
+}
+img.logo_img
+{
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+
+}
+.choose_acc_cards{
+  width:16rem;
+  background-color: transparent;
+}
+//writing code for side_bar component styling
+div.sidebar_div
+{
+  float:left;
+  //   button.sidebar_toggler[data-toggle="collapse"] {
+//     position: relative;
+// }
+
+// div#side_bar_links::after {
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     right: 20px;
+//     transform: translateY(-50%);
+// }
+  border:1px solid yellow;
+  width:20%;
+  height:100vw;
+  background-color:transparent !important;
+  ul{
+
+    li
+    {
+      a.dashborad_link
+      {
+        margin-top:30px;
+        color:$light-gray;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight:bold;
+        padding-left:30px;
+      }
+      a{
+        padding-left:30px;
+        box-sizing: border-box;
+        color:$light-gray;
+        background-color:transparent;
+        &:hover
+        {
+          color:white;
+           background-color:$secondary-color;  
+        }
+        button.add_task_button
+        {
+          padding:0px;
+          margin:0px;
+          border:none;
+          outline: none;
+          &:focus
+          {
+            border:none;
+            outline:none;
+          }
+        }
+      }
+    }
+  }
+}
+div.Card_div{
+  background-color: transparent;
+  color:white;
+  padding-left:0px;
+  min-height:100%;
+  width: 100%;
+  p
+  {
+    font-size: 24px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;   
+  }
+  // .charts_card
+  // {
+  //   display:inline-block;
+  //   height: 170px !important;
+  //   border:2px solid brown;
+  //   width:18vw;
+  //   border-radius: 5px;
+  //   background-color:$secondary-color;
+  //   box-sizing: border-box;
+  //   p{
+  //     padding:0px;
+  //     color:yellow;
+  //     font-size:16px;
+  //     font-weight: normal;
+  //   }
+  // }
+}
+//writing code for massagebar component styling
+div.message_div
+{
+  width:20%;
+  height: 100vh;
+  background-color:$secondary-color;
+}
+div.comp
+{
+  div.card
+  {
+    border:none;
+    background-color: $secondary-color;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  
+  }
+ 
+}
+div.toppers_heading{
+  background-color: $secondary-color;
+  border-radius: 3px;
+  p{
+    @include text_style;
+  }
+}
+div.lower_comp
+{
+  div.card
+  {
+    border-radius:7px;
+    background-color: $secondary-color;
+    margin-bottom: 20px;
+    div.card-body{
+      p.points
+      {
+        padding:0px;
+        margin:0px;
+        font-weight: bold;
+      }
+      span.lower_card_style_span
+      {
+        display:inline-block;
+        padding-right:4.6vw;
+        p
+        {
+          font-size:14px;
+          padding:0px;
+          margin:0px;
+        }
+      }
+    }
+ 
+  }
+ 
+}
+.big_card_outer
+{
+  box-sizing: border-box;
+}
+p.lower_card_para
+{
+  font-size:8px;
+  color:$light-gray;
+}
+div.calender_row
+{
+  div.daily_task_div
+  {
+    background-color: $secondary-color;
+    border-radius:5px;
+    div.main_task_container
+    {
+      color:lightgray;
+      background-color:transparent;
+      padding:20px;
+      h3{
+        font-size: 24px;
+        font-weight: normal;
+      }
+      p{
+        font-size: 14px;
+        color:#2477ff;
+      }
+    }
+    div.task_div
+    {
+      color:lightgray;
+      background-color: $secondary-color;
+      div.check_b
+      {
+        position: relative;
+        top:-3.1em;
+        margin-right:0.3em;
+      }
+      p{
+        font-size: 0.9em;
+        color:gray;
+        margin:3px;
+      }
+      p:nth-child(1){
+        font-size: 0.9em;
+        color:gray;
+      }
+      p:nth-child(2)
+      {
+        font-size: 1em;
+        color:lightgray;
+      }
+
+    }
+  }
+}
+//React Calender styling here
+
+.my_cal{
+  background-color: $secondary-color;
+  width: 100%;
+  border-radius: 5px;
+  border:none;
+  margin-left: -12px;
+}
+.react-calendar__month-view__days__day--weekend {
+  color: white;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: $primary-color;
+}
+
+.react-calendar button:enabled
+{
+  color:lightgray;
+}
+.react-calendar button:enabled:hover {
+  background-color:$primary-color
+}
+.react-calendar__tile--now {
+  color: red;
+  background-color: $primary-color;
+}
+//Add task button Styling here
+div.task_model
+{
+  background-color: $secondary-color;
+  color:lightgray;
+  input
+  {
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+  }
+  input:focus
+  {
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
+  }
+  div.modal-footer
+  {
+    border-bottom: none;
+  }
+}
+
+button.add_task_button
+{
+  background-color: transparent;
+  border:none;
+  color:lightgray;
+}
+// @mixin right_body_container
+// {
+//   border:2px solid green;
+//   float:right;
+//   width:80%;
+//   background-color: transparent;
+//   color:white;
+//   height:100vh;
+// }
+div.toppers_Card_div
+{
+  border:2px solid orange;
+  color:white;
+  
+
+}
+div.insert_heading
+{
+  padding:25px;
+  background-color: $secondary-color;
+  color:lightgray;
+  box-sizing: border-box;
+  margin:0px;
+
+}
+div.footer
+{
+  p{
+    color:lightgray;
+    background-color: $secondary-color;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding:25px;
+  }
+}
+//Styling the notifications here
+div.notification{
+  div.title{
+    font-weight:bold;
+    color:white;
+  }
+  div.details{
+    font-weight:normal;
+    font-size: 12px;
+    color:white;
+  }
+}
+div.create_notification{
+  background-color: $secondary-color;
+  color:lightgray;
+  input,textarea{
+    background-color: $input-color;
+    border:none;
+
+  }
+}
+div.total_notifications{
+  background-color: $secondary-color;
+  color:lightgray;
+}
+div.Notification_comp{
+  div:nth-child(1){
+    color:lightgray;
+
+  }
+  div:nth-child(2){
+    color:gray;
+
+  }
+
+
+}
+// Starting Media Quries Here
+@media(min-width:1201px)
+{
+
+}
+@media(min-width:1025px) and (max-width:1200px)
+{
+  
+}
+@media(min-width:769px) and (max-width:1024px)
+{
+  .protove_logo{
+    width: 230px;
+    height:129px;
+    margin-left: 14% !important;
+   
+  }
+  .choose_acc_cards{
+    width:12rem;
+  }
+}
+@media(min-width:481px) and (max-width:768px)
+{
+  .protove_logo{
+   
+    margin-left: 24% !important;
+   
+  }
+  .choose_acc_cards{
+    width:15rem;
+  }
+}
+@media(min-width:320px) and (max-width:480px)
+{
+  .protove_logo{
+    width: 230px;
+    height:129px;
+    margin-left: 20% !important;
+   
+  }
+  .choose_acc_cards{
+    width:12rem;
+  }
+
+
+
+}
+// @media(max-width:320px)
+// {
+// }
