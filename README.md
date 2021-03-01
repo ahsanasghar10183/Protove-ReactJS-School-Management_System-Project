@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Protove-ReactJS-School-Management_System-Project
+Its a stunning school management system Dashboard Developed in Reactjs (Bootstrap, Material UI, Chartjs and more technologies)
+>>>>>>> 116dc1ca45fb9b51f0d26329c516e18fce8621bc
